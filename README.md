@@ -36,7 +36,7 @@ Prerequisite:
 
 ## Step-by-step from scratch
 
-## 1. Vite starter
+1. Vite starter
 
 ```
 yarn create vite lookerstudio-vite-starter --template vanilla-ts
