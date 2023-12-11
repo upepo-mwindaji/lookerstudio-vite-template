@@ -1,0 +1,34 @@
+{
+  "name": "lookerstudio-vite-starter",
+  "description": "a Looker Studio starter template with development workflow using vite",
+  "keywords": ["looker Studio", "Data Studio", "vite", "typescript"],
+  "homepage": "",
+  "bugs": "",
+  "licence": "MIT",
+  "repository": "",
+  "organization": "My Org",
+  "tcsUrl": "https://example.com/tcs",
+  "privacyUrl": "https://example.com/privacy",
+  "config": {
+    "componentId": "lookerstudio-vite-starter"
+  },
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:dev": "tsc && vite build --mode development",
+    "build:prod": "tsc && vite build --mode production",
+    "preview": "vite preview",
+    "deploy:dev": "npm run build:dev && node ./scripts/upload.js mode=development",
+    "deploy:prod": "npm run build:prod && node ./scripts/upload.js mode=production"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.7.0",
+    "@google/dscc": "^0.3.22"
+  }
+}
